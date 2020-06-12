@@ -22,6 +22,8 @@ for i in range(len(lines)):
             if lines[j][0]=="#":
                 break
             else:
-                out.write(lines[j])
+                outtemp = lines[j].split()
+                outl = outtemp[0]+ " " + outtemp[1] + " " + outtemp[2] + "\n"
+                out.write(outl)
         out.close()
         
